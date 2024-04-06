@@ -20,9 +20,6 @@ if __name__ == "__main__":
     while True:
         operation = input("Enter operation (+, -, * or /): ")
         if operation not in ("+", "-", "*", "/"):
-            print("Invalid operation. Please enter '+', '-', "*" or '/'.")
-        operation = input("Enter operation (+, -, * or /): ")
-        if operation not in ("+", "-", "*", "/"):
             print("Invalid operation. Please enter '+', '-', '*' or '/'.")
             continue
 
