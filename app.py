@@ -1,14 +1,20 @@
 def add(x, y):
     return x + y
 
+
 def subtract(x, y):
     return x - y
 
+
+def multiply(x, y):
+    return x * y
+
+
 if __name__ == "__main__":
     while True:
-        operation = input("Enter operation (+ or -): ")
-        if operation not in ("+", "-"):
-            print("Invalid operation. Please enter '+' or '-'.")
+        operation = input("Enter operation (+, - or *): ")
+        if operation not in ("+", "-", "*"):
+            print("Invalid operation. Please enter '+' or '-' or '*'.")
             continue
 
         try:
@@ -22,6 +28,8 @@ if __name__ == "__main__":
             result = add(num1, num2)
         elif operation == "-":
             result = subtract(num1, num2)
+        elif operation == "*":
+            result = multiply(num1, num2)
 
         print(f"Result: {result}")
 
